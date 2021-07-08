@@ -6,7 +6,7 @@
 /*   By: lpsyk <lpsyk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:42:00 by lpsyk             #+#    #+#             */
-/*   Updated: 2021/07/08 13:01:58 by lpsyk            ###   ########.fr       */
+/*   Updated: 2021/07/08 13:08:56 by lpsyk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (start < end)
 	{
-		str[i] = s1[start];
-		i++;
-		start++;
+		str[i++] = s1[start++];
 	}
 	str[i] = 0;
 	return (str);
