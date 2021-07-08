@@ -6,7 +6,7 @@
 /*   By: lpsyk <lpsyk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 12:42:00 by lpsyk             #+#    #+#             */
-/*   Updated: 2021/07/08 13:00:33 by lpsyk            ###   ########.fr       */
+/*   Updated: 2021/07/08 13:01:58 by lpsyk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_char_in_set(s1[end - 1], set))
 		end--;
 	str = (char *) malloc(end - start + 1);
-	if (!strimmed)
+	if (!str)
 		return (0);
 	i = 0;
 	while (start < end)
