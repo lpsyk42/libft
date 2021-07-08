@@ -13,28 +13,18 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-/*
-** -----------------------------------------------------------------------------
-** Includes
-*/
+/* Includes */
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-/*
-** -----------------------------------------------------------------------------
-** Function prototypes
-*/
+/* Function prototypes */
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
-/*
-** -----------------------------------------------------------------------------
-** Function prototypes
-*/
 void		ft_bzero(void *s, size_t n);
 void		*ft_memset(void *s, int c, size_t len);
 void		*ft_memcpy(void *dest, const void *src, size_t n);
